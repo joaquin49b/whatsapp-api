@@ -18,6 +18,7 @@ router.get('/checkauth', async (req, res) => {
 });
 
 router.get('/getqr', (req,res) => {
+    console.log('entra')
     var qrjs = fs.readFileSync('components/qrcode.js');
 
     fs.readFile('components/last.qr', (err,last_qr) => {
